@@ -15,12 +15,11 @@ class Weapon {
 
 public:
 
-	Weapon(void);
+	Weapon(string type);
 	~Weapon(void);
 
-	string const	&get_type(void);
-
-	void			set_type(string type);
+	string const	&getType(void);
+	void setType(string t);
 
 private:
 
