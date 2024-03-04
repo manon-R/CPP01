@@ -25,13 +25,14 @@ void find_and_replace(ostream &out, const string &origin, const string &s1, cons
 		new_pos = origin.find(s1, pos);
 		if (new_pos == string::npos)
 		{
-			out << origin.substr(pos);
+			out << origin.substr(pos) << endl;
 			return ;
 		}
 		out << origin.substr(pos, (new_pos - pos));
 		out << s2;
 		pos = new_pos + s1.length(); // -1?
 	}
+	out << endl;
 }
 
 int main(int argc, char **argv)
