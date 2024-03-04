@@ -2,6 +2,7 @@
 # define HUMANB_HPP
 
 #include <string>
+#include "Weapon.hpp"
 
 // Macros pour les couleurs
 # define RESET   "\033[0m"
@@ -20,8 +21,7 @@ public:
 
 	string	get_name(void);
 
-	void	set_name(string name);
-	void	set_weapon(Weapon *weapon);
+	void	setWeapon(Weapon &weapon);
 	void	attack();
 
 private:
