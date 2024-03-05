@@ -28,7 +28,7 @@ private:
 	string name;
 };
 
-void randomChump( std::string name );
-Zombie* newZombie( std::string name );
+void randomChump( string name );
+Zombie* newZombie( string name );
 
 #endif

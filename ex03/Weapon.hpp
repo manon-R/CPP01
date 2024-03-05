@@ -18,7 +18,8 @@ public:
 	Weapon(string type);
 	~Weapon(void);
 
-	string const	&getType(void);
+	string const &getType(void);
+
 	void setType(string t);
 
 private:
